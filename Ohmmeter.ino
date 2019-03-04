@@ -17,7 +17,7 @@
 
 const byte resistorPin = A0; // Main sensor 
 
-const byte resistorPins[] = {5, 6, 7, 8, 9, 10, 11}; // Multiple resistor pins...
+const byte resistorPins[] = {5, 6, 7, 8, 9, 10, 11}; // Multiple resistors pins...
 
 const int resistorValues[NUMBERPINS] = {220, 660, 1000, 2200, 4700, 10000, 22000}; // Valor das resistências
 int resistorReads[NUMBERPINS] = {};
