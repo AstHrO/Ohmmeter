@@ -1,8 +1,5 @@
-const byte resistorPin = A0;
-const byte resistorPins[] = {5, 6, 7, 8, 9, 10, 11};
 # define NUMBERPINS sizeof(resistorPins)
 
-// The pins to use on the arduino
 #define PIN_SCE   2
 #define PIN_RESET 1
 #define PIN_DC    4
@@ -17,6 +14,11 @@ const byte resistorPins[] = {5, 6, 7, 8, 9, 10, 11};
 // Size of the LCD
 #define LCD_X     84
 #define LCD_Y     48
+
+const byte resistorPin = A0; // Main sensor 
+
+const byte resistorPins[] = {5, 6, 7, 8, 9, 10, 11}; // Multiple resistor pins...
+
 const int resistorValues[NUMBERPINS] = {220, 660, 1000, 2200, 4700, 10000, 22000}; // Valor das resistências
 int resistorReads[NUMBERPINS] = {};
 double vx; float rx;
